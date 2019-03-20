@@ -1,0 +1,69 @@
+\documentclass[a4paper,12pt,oneside]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage[toc,page]{appendix}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[super]{nth}
+\usepackage{mathtools}
+\usepackage[style=chicago-authordate,
+            natbib = true,
+            maxbibnames = 40,
+            backend=bibtex]{biblatex}
+\addbibresource{mtbib}%\usepackage[round]{natbib}
+
+\title{Master Thesis}
+\author{Petter Kristiansen}
+\date{January 2018}
+
+\pgfplotsset{compat=1.15}
+\begin{document}
+
+\maketitle
+
+\newpage
+\newpage
+
+\section*{Abstract}
+\begin{itemize}
+    \item Short summary of what happened in the thesis
+    \item Short conclusion of the results of the thesis
+    \item Short summary on how I got the results
+\end{itemize}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section*{Acknowledgement}
+Thank this and that
+
+\newpage
+
+\input{chapters/chapter1.tex}
+\input{chapters/chapter2.tex}
+\input{chapters/chapter3.tex}
+\input{chapters/chapter4.tex}
+\input{chapters/chapter5.tex}
+\input{chapters/chapter6.tex}
+\input{chapters/chapter7.tex}
+\input{chapters/chapter8.tex}
+
+%\bibliographystyle{plainnat}
+%\bibliography{mtbib}
+\printbibliography
+\begin{appendices}
+\input{chapters/appendices.tex}
+\end{appendices}
+
+\end{document}
