@@ -1,0 +1,15 @@
+\chapter{Conclusion}
+As a product of Felix Breitschädels research in 2013, a new test bench was developed to measure the chamber height and the span curves in individual skis to create a profile of the measured ski. This went under the category of a Finite Element Simulation to produce heat maps for the weight distribution. One of the problems discussed in the publication was the sensitivity of the model. The FE Simulation had the capability of producing good estimates of the span curve with given applied force $N$. The sensitivity mentioned was due to the inaccuracies in the measured deflection and the double derivative of the formula for calculating the bending stiffness:
+\begin{equation}
+    El = \frac{M}{k} , k \approx \frac{\partial^2 u}{\partial x^2} 
+\end{equation}
+
+\section{Further work}
+What can be done in the future
+\begin{itemize}
+    \item Different sensor, weight class below
+    \item Different microcontroller with better ADC
+    \item More linear calibration steps
+    \item More accurate calibration process
+    \item Upgrading the op-amp of the circuits for reduced amount of circuitboards
+\end{itemize}

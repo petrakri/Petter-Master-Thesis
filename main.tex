@@ -19,30 +19,31 @@
             maxbibnames = 40,
             backend=bibtex]{biblatex}
 \addbibresource{mtbib}%\usepackage[round]{natbib}
+\usepackage[IFI, master, ExtraLongTitle]{mnfrontpage}
 
-\title{Master Thesis}
+\title{Prototyping a measurement device for evaluating the performance of cross-country skis}
+\subtitle{Investigation of pressure-distribution and twisting}
 \author{Petter Kristiansen}
-\date{January 2018}
-
+\month = 8
+\year = 2019
 \pgfplotsset{compat=1.15}
+
 \begin{document}
 
-\maketitle
-
-\newpage
+\mnfrontpage
 \newpage
 
 \section*{Abstract}
 \begin{itemize}
     \item Short summary of what happened in the thesis
     \item Short conclusion of the results of the thesis
-    \item Short summary on how I got the results
+    \item Short summary on key results
 \end{itemize}
 
 \newpage
 
 \tableofcontents
-
+\listoffigures
 \newpage
 
 \section*{Acknowledgement}
@@ -58,6 +59,7 @@ Thank this and that
 \input{chapters/chapter6.tex}
 \input{chapters/chapter7.tex}
 \input{chapters/chapter8.tex}
+\input{chapters/chapter9.tex}
 
 %\bibliographystyle{plainnat}
 %\bibliography{mtbib}
